@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.header {
+  background-color: #c4a621;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-link {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.addShop,
+.displayShop {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.addShop {
+  margin-top: 70px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+input,
+select {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+select,
+option {
+  width: 180px;
+  padding: 7px;
+  font-size: large;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+th button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+  padding: 0;
+  margin: 5px 5px;
+}
+
+th button:hover {
+  color: #ffffff;
+}
+
+tfoot tr td {
+  font-size: large;
+  text-align: center;
+  padding: 10vh 10px;
+}
+
+.form-container button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #c4a621;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button {
+  background-color: #c4a621;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #c4a631;
+}
+
+.leaseShop,
+.list-page {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.leaseShop p{
+  width: 100%;
+  margin-top: 40vh;
+  font-size: x-large;
+  text-align: center;
+}
+.shop-table {
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.lease-form {
+  position: fixed;
+  top: 15vh;
+  margin-left: 13%;
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.lease-form h3 {
+  margin-bottom: 20px;
+}
+.lease-form form {
+  margin-top: 20px;
+}
+.lease-form form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.lease-form form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.lease-form form button[type="submit"] {
+  background-color: #c4a621;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lease-form form button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: no-drop;
+}
+
+.lease-form form button[type="submit"]:hover:enabled {
+  background-color: #c4a631;
+}
+
+.blurred {
+  filter: blur(2px) opacity(40%);
+}
+
+.focus {
+  filter: opacity(100%);
+}
+
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: x-large;
+}
